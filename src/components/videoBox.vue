@@ -334,7 +334,6 @@
 
 
 <script>
-
 import {Content} from '@/Models/Content';
 
 export default {
@@ -399,9 +398,6 @@ export default {
 </script>
 
 <style>
-.video-box-icon .v-btn:not(.v-btn--round).v-size--default{
-  padding:0;
-}
 .video-box .video-main .null-video{
   margin: 200px auto;
 }
@@ -452,6 +448,9 @@ export default {
   border: solid 2px #ff8f00;
   box-shadow: none;
 }
+.video-box .video-box-icon .v-btn:not(.v-btn--round).v-size--default{
+  padding:0;
+}
 .video-box .video-description .video-btn-text {
   font-size: 16px;
   font-weight: 500;
@@ -465,7 +464,7 @@ export default {
   color:#3e5480;
   padding: 6px 0;
 }
-.video-box  .video-description .icon-btn-box{
+.video-box .video-description .icon-btn-box{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -473,30 +472,29 @@ export default {
 .video-box .video-description .fi.favorite-bookmark {
   color: #ff8f00;
 }
-.download-part .download-badge{
+.video-box .download-part .download-badge{
   display: none;
 }
-
-.download-part{
+.video-box .download-part{
   margin: 20px;
   display: flex;
   flex-direction: column;
   border-radius: 20px ;
   border: #ff8f00 1px solid !important;
 }
-.download-part .download-title{
+.video-box .download-part .download-title{
   margin:20px auto;
   height: 42px;
   text-align: center;
 }
-.download-part .download-title a{
+.video-box .download-part .download-title a{
   text-decoration: none;
   color:#FFFFFF;
   background-color:#ff8f00 ;
   padding: 15px;
   border-radius: 20px;
 }
-.download-part .details{
+.video-box .download-part .details{
   border-radius: 20px;
   margin: 20px;
   color: #FFFFFF;
@@ -504,21 +502,14 @@ export default {
 .video-box .video-description .description .icon-btn-box .video-box-icon .bookmark-button .v-btn__loader .v-progress-circular .v-progress-circular__overlay {
   color: #ff8f00 !important;
 }
-
 .v-application p{
   margin-bottom: 0;
 }
-.video-box-title {
-  color: #3e5480;
-  font-size: 20px;
-  font-weight: 500;
-}
-
 @media screen and (max-width: 1200px){
-  .video-box-icon .v-btn:not(.v-btn--round).v-size--default{
+  .video-box .video-box-icon .v-btn:not(.v-btn--round).v-size--default{
     min-width: 57px !important;
   }
-  .video-description {
+  .video-box .video-description {
     margin-bottom:0 !important;
   }
   .video-box .video-main{
@@ -529,16 +520,16 @@ export default {
     flex-direction: column !important;
     align-items: flex-end !important;
   }
-  .icon-btn-box .video-box-icon-button{
+  .video-box .icon-btn-box .video-box-icon-button{
     justify-content: end ;
   }
-  .video-description .icon-btn-box {
+  .video-box .video-description .icon-btn-box {
     align-items: end !important;
   }
-  .seen-btn{
+  .video-box .seen-btn{
     margin-bottom: 15px;
   }
-  .download-part{
+  .video-box .download-part{
     font-size: 12px;
     margin: 10px;
     display: flex;
@@ -546,12 +537,12 @@ export default {
     border-radius: 10px ;
     border: #ff8f00 1px solid;
   }
-  .download-part .download-title{
+  .video-box .download-part .download-title{
     margin:10px auto;
     height: 32px;
     text-align: center;
   }
-  .download-part .download-title a{
+  .video-box .download-part .download-title a{
     font-size: 12px;
     text-decoration: none;
     color:#FFFFFF;
@@ -559,7 +550,7 @@ export default {
     padding: 10px;
     border-radius: 10px;
   }
-  .download-part .details{
+  .video-box .download-part .details{
     font-size: 12px;
     border-radius: 10px;
     margin: 10px;
@@ -596,26 +587,26 @@ export default {
   .video-box .video-description .icon-btn-box {
     align-items: flex-start !important;
   }
-  .video-description{
+  .video-box .video-description{
     margin-bottom: 0;
   }
-  .seen-btn{
+  .video-box .seen-btn{
     height: 40px !important;
     box-sizing: border-box;
   }
-  .download-part{
+  .video-box .download-part{
     margin: 5px;
     display: flex;
     flex-direction: column;
     border-radius: 5px ;
     border: #ff8f00 1px solid !important;
   }
-  .download-part .download-title{
+  .video-box .download-part .download-title{
     margin:5px auto;
     height: 32px;
     text-align: center;
   }
-  .download-part .download-title a{
+  .video-box .download-part .download-title a{
     font-size: 10px;
     text-decoration: none;
     color:#FFFFFF;
@@ -623,20 +614,20 @@ export default {
     padding: 5px;
     border-radius: 5px;
   }
-  .download-part .details{
+  .video-box .download-part .details{
     font-size: 8px;
     border-radius: 5px;
     margin: 1px;
     color: #FFFFFF;
   }
-  .download-part .details.v-btn:not(.v-btn--round).v-size--default {
+  .video-box .download-part .details.v-btn:not(.v-btn--round).v-size--default {
     height: 19px;
     min-width: 0!important;
     padding: 0 8px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 796px){
-  .video-box-icon .v-btn:not(.v-btn--round).v-size--default {
+  .video-box .video-box-icon .v-btn:not(.v-btn--round).v-size--default {
     min-width: 55px !important;
   }
   .video-box .video-description .subtitle .part {
@@ -668,7 +659,7 @@ export default {
     color:#3e5480;
     padding: 6px 0;
   }
-  .video-box-icon .v-btn:not(.v-btn--round).v-size--default{
+  .video-box .video-box-icon .v-btn:not(.v-btn--round).v-size--default{
     min-width: 36px !important;
 
   }
@@ -686,86 +677,97 @@ export default {
     height: 36px !important;
   }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
   .video-box .video-main {
     margin-bottom: 10px;
   }
-  .video-box .video-description .description{
+
+  .video-box .video-description .description {
     display: flex !important;
     flex-direction: column !important;
   }
-  .video-box .video-description .video-btn{
+
+  .video-box .video-description .video-btn {
     height: 40px;
   }
-  .video-box .video-box-icon .icon{
+
+  .video-box .video-box-icon .icon {
     margin-right: 35px;
   }
+
   .video-box .video-box-icon {
     margin-right: 0;
   }
-  .video-description .icon-btn-box{
+
+  .video-box .video-description .icon-btn-box {
     flex-direction: column;
     align-items: flex-end;
   }
-  .download-list{
+
+  .video-box .download-list {
     padding-top: 3px;
   }
-  .download-btn {
+
+  .video-box .download-btn {
     display: flex;
     flex-direction: column !important;
   }
-  .download-badge{
+
+  .video-box .download-badge {
     display: block !important;
   }
-  .download-part{
+
+  .video-box .download-part {
     margin: 10px !important;
     display: flex;
     flex-direction: column;
-    border-radius: 10px ;
+    border-radius: 10px;
     border: none;
     height: 30px;
     border: none !important;
   }
-  .download-badge .v-badge__badge{
+
+  .video-box .download-badge .v-badge__badge {
     font-size: 9px !important;
     height: 17px !important;
   }
-  .download-part .download-title{
-    margin:5px auto;
+
+  .video-box .download-part .download-title {
+    margin: 5px auto;
     height: 32px;
     text-align: center;
   }
-  .download-part .download-title a{
+
+  .video-box .download-part .download-title a {
     font-size: 12px;
     text-decoration: none;
     border-radius: 5px;
     width: 120px;
     height: 30px;
   }
-  .download-part .details{
+
+  .video-box.download-part .details {
     font-size: 6px;
     border-radius: 5px;
     margin: 1px;
     color: #FFFFFF;
     display: none;
   }
-  .download-part .details.v-btn:not(.v-btn--round).v-size--default {
+
+  .video-box .download-part .details.v-btn:not(.v-btn--round).v-size--default {
     height: 10px;
     min-width: 0 !important;
     padding: 0 4px;
   }
-  .video-box-title {
-    text-align: right;
-  }
 }
 @media only screen and (min-width: 359px) and (max-width: 403px){
-  .description{
+  .video-box .description{
     display: flex;
     flex-direction: column !important;
   }
 }
 @media screen and (max-width: 350px){
-  .video-description .icon-btn-box{
+  .video-box .video-description .icon-btn-box{
     flex-direction: row;
     justify-content: space-between !important;
   }
@@ -791,7 +793,7 @@ export default {
   .video-box .video-main {
     margin-bottom: 10px;
   }
-  .video-description{
+  .video-box .video-description{
     margin-bottom:16px;
   }
   .video-box-title {
@@ -801,7 +803,7 @@ export default {
 }
 @media screen and (max-width: 320px){
 
-  .video-description{
+  .video-box .video-description{
     margin-bottom:10px;
   }
 }

@@ -46,10 +46,6 @@ export default {
 </script>
 
 <style>
-
-.comment-box .comment-main{
-  margin: 0 70px 883px 25px;
-}
 .comment-box .v-text-field.v-text-field--enclosed{
   margin-right: 0 !important;
 }
@@ -90,6 +86,4 @@ export default {
   margin-right: 29px;
   font-size: 16px;
 }
-
-
 </style>

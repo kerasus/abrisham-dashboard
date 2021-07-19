@@ -101,7 +101,6 @@ export default {
   }
   .main .coming-soon-description{
     font-size: 14px;
-
   }
 }
 
@@ -118,7 +117,6 @@ export default {
     font-size: 14px;
     width: 177px;
     height: 48px;
-
   }
 }
 @media screen and (max-width: 350px) {
@@ -126,8 +124,6 @@ export default {
     font-size: 14px;
     width: 177px;
     height: 48px;
-
   }
 }
-
 </style>
